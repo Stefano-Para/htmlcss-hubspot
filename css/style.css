@@ -84,19 +84,37 @@ li > a:hover {
 ul li {
     list-style-type: none;
     float: right;
+    margin: 1%;
+}
+li i {
     padding: 0 10px;
 }
+
 /* JUMBOTRON  */
-header section:last-child {
-    position: relative;
+section.jumbotron {
     background: url(../img/jumbotron.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%
+    width: 100%;
 }
-.green-line {
+
+.jumbotron-text {
+    display: inline-block;
+    width: 50%;
+    color: #33475B;
+    margin: 10% 0;
+}
+h1 {
+    font-size: 300%;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* .green-line {
     position: absolute;
     height: 40px;
     width: 100%;
@@ -104,7 +122,4 @@ header section:last-child {
     background-color: #7BDED2;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
-}
-.jumbotron-text {
-    width: 50%;
-}
+} */
