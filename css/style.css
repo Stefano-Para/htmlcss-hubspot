@@ -4,7 +4,64 @@
     margin: 0;
     padding: 0;
 }
-
 body {
-    /* background-color: red; */
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+.contained70{
+    width: 70%;
+    margin: 0 auto;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+i {
+    margin-right: 2%;
+}
+
+/* HEADER  */
+.head-top,
+.head-bot {
+    padding: 1.5% 0;
+}
+section:first-child {
+    background: #F4F9FD;
+}
+section:last-child {
+    background: white;
+}
+.cell-head {
+    display: inline-block;
+    width: 50%;
+}
+.right-align {
+    text-align: right;
+}
+.left-align {
+    text-align: left;
+}
+/* specifico border per prima cella top  */
+#bd-left {
+    border-left: 1px solid black;
+    padding-left: 4%;
+    margin-left: 2%;
+}
+
+/* specifiche bottoni  */
+.btn {
+    padding: 1.5%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.trasparent-btn {
+    color: #FE775A;
+}
+.orange-btn {
+    background-color: #FE775A;
+    color: white;
 }
