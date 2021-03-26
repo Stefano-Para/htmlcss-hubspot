@@ -68,7 +68,7 @@ li > a:hover {
 .btn {
     padding: 1.5%;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .btn:hover {
     opacity: 0.5;
@@ -81,6 +81,10 @@ li > a:hover {
     background-color: #FE775A;
     color: white;
 }
+.big-btn {
+    padding: 20px 35px;
+    font-size: small;
+}
 ul li {
     list-style-type: none;
     float: right;
@@ -92,34 +96,40 @@ li i {
 
 /* JUMBOTRON  */
 section.jumbotron {
+    position: relative;
     background: url(../img/jumbotron.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
-
 .jumbotron-text {
     display: inline-block;
     width: 50%;
     color: #33475B;
-    margin: 10% 0;
+    margin: 5%;
 }
-h1 {
+.jumbotron-text > h1 {
     font-size: 300%;
-    letter-spacing: 1px;
+    margin-bottom: 5%;
 }
-
-
-
-
-/* .green-line {
+.jumbotron-text > p {
+    font-size: 95%; 
+    line-height: 170%;
+    margin-bottom: 7%;
+}
+.jumbotron-text > span {
+    display: block;
+    margin: 8% 0;
+    font-size: 70%;
+}
+.green-line {
     position: absolute;
     height: 40px;
     width: 100%;
-    bottom: -15px;
+    bottom: 0;
     background-color: #7BDED2;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
-} */
+}
