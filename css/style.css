@@ -102,7 +102,7 @@ section.jumbotron {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 700px;
     width: 100%;
 }
 .jumbotron-text {
@@ -127,9 +127,9 @@ section.jumbotron {
 }
 .green-line {
     position: absolute;
-    height: 40px;
-    width: 100%;
-    bottom: 0;
+    height: 70px;
+    width: 100%; 
+    bottom: 0; 
     background-color: #7BDED2;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
