@@ -32,6 +32,7 @@ header section:first-child {
     width: 100%;
     top: 0;
     border-bottom: 1px solid black;
+    z-index: 2;
 }
 header section:nth-child(2) {
     background: white;
