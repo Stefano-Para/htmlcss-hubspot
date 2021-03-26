@@ -20,23 +20,22 @@ body {
 .float-left {
     float: left;
 }
-i {
-    margin-right: 2%;
-}
-hr {
-    border-top: 1px solid black;
-}
 
 /* HEADER  */
 .head-top,
 .head-bot {
     padding: 1.5% 0;
 }
-section:first-child {
+header section:first-child {
     background: #F4F9FD;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid black;
 }
-section:last-child {
+header section:nth-child(2) {
     background: white;
+    margin-top: 67px;
 }
 .cell-head {
     display: inline-block;
@@ -48,7 +47,7 @@ section:last-child {
 .left-align {
     text-align: left;
 }
-.right-align i {
+p > a > i {
     color: #06A6BE;
 }
 /* specifico border per prima cella top  */
@@ -57,13 +56,13 @@ section:last-child {
     padding-left: 4%;
     margin-left: 2%;
 }
-
 /* specifiche bottoni - links */
 header a {
     text-decoration: none;
     color: #33475B;
 }
-div.left-align a:hover {
+div.left-align a:hover,
+li > a:hover {
     text-decoration: underline;
 }
 .btn {
@@ -82,6 +81,30 @@ div.left-align a:hover {
     background-color: #FE775A;
     color: white;
 }
-
+ul li {
+    list-style-type: none;
+    float: right;
+    padding: 0 10px;
 }
-
+/* JUMBOTRON  */
+header section:last-child {
+    position: relative;
+    background: url(../img/jumbotron.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%
+}
+.green-line {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: -15px;
+    background-color: #7BDED2;
+    border-top: 3px solid #33475B;
+    border-bottom: 3px solid #33475B;
+}
+.jumbotron-text {
+    width: 50%;
+}
