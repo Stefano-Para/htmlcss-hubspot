@@ -23,6 +23,9 @@ body {
 i {
     margin-right: 2%;
 }
+hr {
+    border-top: 1px solid black;
+}
 
 /* HEADER  */
 .head-top,
@@ -45,6 +48,9 @@ section:last-child {
 .left-align {
     text-align: left;
 }
+.right-align i {
+    color: #06A6BE;
+}
 /* specifico border per prima cella top  */
 #bd-left {
     border-left: 1px solid black;
@@ -52,16 +58,30 @@ section:last-child {
     margin-left: 2%;
 }
 
-/* specifiche bottoni  */
+/* specifiche bottoni - links */
+header a {
+    text-decoration: none;
+    color: #33475B;
+}
+div.left-align a:hover {
+    text-decoration: underline;
+}
 .btn {
     padding: 1.5%;
     border: 1px solid;
     border-radius: 5px;
 }
+.btn:hover {
+    opacity: 0.5;
+}
 .trasparent-btn {
     color: #FE775A;
+    margin: 0px 2%;
 }
 .orange-btn {
     background-color: #FE775A;
     color: white;
 }
+
+}
+
