@@ -95,7 +95,7 @@ li > a:hover {
     padding: 20px 35px;
     font-size: small;
 }
-ul li {
+ul li:not(div i:last-child) {
     display: inline-block;
     list-style-type: none;
     margin: 1%;
@@ -205,5 +205,10 @@ h4 {
     font-size: 95%; 
     line-height: 170%;
 }
+.main-box i {
+    color:#FE775A;
+}
+
+/* parte main 1/3 - 3 colonne  */
 
 
