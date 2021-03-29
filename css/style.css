@@ -101,6 +101,11 @@ li > a:hover {
     background-color: #FE775A;
     color: white;
 }
+.grey-btn {
+    color: #33475B;
+    background-color:#C6D1DD;
+    padding: 10px;
+}
 .big-btn {
     padding: 20px 35px;
     font-size: small;
@@ -372,19 +377,42 @@ div.img-right {
 footer {
     background-color: #32495B;
     height: 800px;
+    font-size: 80%;
+}
+.foot-col {
+    width: 25%;
 }
 footer a {
     text-decoration: none;
     color: #C6D1DD;
 }
-/* footer div li a:first-child {
+footer div li:first-child>a {
     color: white;
-} */
-.foot-col {
-    width: 25%;
-    
 }
-
+footer div li:first-child {
+    margin: 30px 0;
+}
+footer div li {
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+footer a>i {
+    margin: 5px 10px 0 0;
+}
+/* footer 2/3  */
+.languages ul {
+    margin: 0 auto;
+    width: 50%;
+}
+.languages {
+    margin: 50px auto 30px;
+}
+.languages li {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    color: #C6D1DD;
+}
 
 
 
