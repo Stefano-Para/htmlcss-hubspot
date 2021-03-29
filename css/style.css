@@ -376,8 +376,8 @@ div.img-right {
 /* footer  */
 footer {
     background-color: #32495B;
-    height: 800px;
     font-size: 80%;
+    padding-bottom: 10px;
 }
 .foot-col {
     width: 25%;
@@ -386,13 +386,13 @@ footer a {
     text-decoration: none;
     color: #C6D1DD;
 }
-footer div li:first-child>a {
+footer div.foot-col li:first-child>a {
     color: white;
 }
-footer div li:first-child {
+footer div.foot-col li:first-child {
     margin: 30px 0;
 }
-footer div li {
+footer div.foot-col li {
     text-transform: capitalize;
     margin: 20px 0;
 }
@@ -405,13 +405,33 @@ footer a>i {
     width: 50%;
 }
 .languages {
-    margin: 50px auto 30px;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C6D1DD;
 }
 .languages li {
     display: inline-block;
     width: 15%;
     text-align: center;
     color: #C6D1DD;
+}
+
+/* footer 3/3  */
+footer section:last-child {
+    position: relative;
+}
+.last-left {
+    color: white;
+}
+.last-right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.last-right li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
 
