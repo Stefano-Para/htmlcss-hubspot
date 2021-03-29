@@ -61,7 +61,7 @@ body {
 .right-align li {
     padding: 0 5px;
 }
-img {
+div.cell-head>img {
     vertical-align: middle;
 }
 i {
@@ -340,26 +340,26 @@ header.secondary-head{
 .secondary-head>div.float-left>img {
     width: 20%;
     padding: 1%;
+    vertical-align: middle;
 }
 
 /* parte testo + sponsor + grossa img  */
-.secondary-main {
-    position: relative;
-    margin: 10px auto;
-}
-.secondary-main>h2 {
-    
-}
-.text-left {
-    display: inline-block;
+section.secondary-main div {
     width: 50%;
-    color: #33475B;
-    margin: 5% 0;
 }
-.img-right {
-    position: absolute;
-    right: 0;
-    top: 0;
+div.text-left {
+    color: #33475B;
+    padding-right: 15%;
+}
+div.text-left h2 {
+    margin: 5px 0;
+}
+div.text-left p {
+    margin: 40px 0;
+}
+
+section.secondary-main img {
+    width: 50%;
 }
 
 
