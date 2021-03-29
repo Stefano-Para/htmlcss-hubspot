@@ -30,7 +30,9 @@ body {
 /* HEADER  */
 .head-top,
 .head-bot {
-    padding: 1.5% 0;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
 }
 header section:first-child {
     background: #F4F9FD;
@@ -39,10 +41,12 @@ header section:first-child {
     top: 0;
     border-bottom: 1px solid black;
     z-index: 2;
+    font-weight: 600;
+    font-size: 90%;
 }
 header section:nth-child(2) {
     background: white;
-    margin-top: 67px;
+    margin-top: 71px;
 }
 .cell-head {
     display: inline-block;
@@ -54,8 +58,14 @@ header section:nth-child(2) {
 .left-align {
     text-align: left;
 }
+.right-align li {
+    padding: 0 5px;
+}
+img {
+    vertical-align: middle;
+}
 i {
-    padding-right: 1%;
+    padding: 0 5px;
 }
 .right-align p i {
     color: #06A6BE;
@@ -78,7 +88,7 @@ li > a:hover {
 .btn {
     padding: 1.5%;
     border: 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .btn:hover {
     opacity: 0.5;
@@ -97,10 +107,7 @@ li > a:hover {
 }
 ul li {
     list-style-type: none;
-    margin: 1%;
-}
-li i {
-    padding: 0 10px;
+    font-weight: 600;
 }
 
 /* JUMBOTRON  */
@@ -126,7 +133,8 @@ section.jumbotron {
 .jumbotron-text > p,
 .contained-center > p,
 .main-uno > p {
-    font-size: 95%; 
+    font-size: 85%;
+    font-weight: 600;
     line-height: 170%;
     margin-bottom: 7%;
 }
@@ -201,8 +209,9 @@ h4 {
 .main-box > p {
     margin: 3% 0;
     padding-right: 5%;
-    font-size: 95%; 
+    font-size: 85%;
     line-height: 170%;
+    font-weight: 600;
 }
 .main-box i {
     color:#FE775A;
