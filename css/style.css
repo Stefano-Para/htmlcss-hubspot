@@ -342,6 +342,27 @@ header.secondary-head{
     padding: 1%;
 }
 
+/* parte testo + sponsor + grossa img  */
+.secondary-main {
+    position: relative;
+    margin: 10px auto;
+}
+.secondary-main>h2 {
+    
+}
+.text-left {
+    display: inline-block;
+    width: 50%;
+    color: #33475B;
+    margin: 5% 0;
+}
+.img-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
 
 
 
