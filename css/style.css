@@ -77,7 +77,7 @@ i {
     margin-left: 2%;
 }
 /* specifiche bottoni - links */
-a {
+a:not(footer a) {
     text-decoration: none;
     color: #33475B;
 }
@@ -132,15 +132,17 @@ section.jumbotron {
 }
 .jumbotron-text > p,
 .contained-center > p,
-.main-uno > p {
+.main-uno > p,
+.text-left > p {
     font-size: 85%;
     font-weight: 600;
     line-height: 170%;
     margin-bottom: 7%;
 }
-.jumbotron-text > span {
+.jumbotron-text > span,
+.text-left > span {
     display: block;
-    margin: 8% 0;
+    margin: 10% 0;
     font-size: 70%;
 }
 .green-line {
@@ -349,19 +351,39 @@ section.secondary-main div {
 }
 div.text-left {
     color: #33475B;
-    padding-right: 15%;
+    padding-right: 70px;
 }
 div.text-left h2 {
-    margin: 5px 0;
+    font-size: 180%;
 }
 div.text-left p {
-    margin: 40px 0;
+    margin: 30px 0 50px 0;
 }
-
 section.secondary-main img {
     width: 50%;
 }
+div.img-right {
+    text-align: right;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
 
+/* footer  */
+footer {
+    background-color: #32495B;
+    height: 800px;
+}
+footer a {
+    text-decoration: none;
+    color: #C6D1DD;
+}
+/* footer div li a:first-child {
+    color: white;
+} */
+.foot-col {
+    width: 25%;
+    
+}
 
 
 
