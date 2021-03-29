@@ -34,7 +34,7 @@ body {
     line-height: 70px;
     vertical-align: middle;
 }
-header section:first-child {
+#main-head>section:first-child {
     background: #F4F9FD;
     position: fixed;
     width: 100%;
@@ -44,7 +44,7 @@ header section:first-child {
     font-weight: 600;
     font-size: 90%;
 }
-header section:nth-child(2) {
+#main-head>section:nth-child(2) {
     background: white;
     margin-top: 71px;
 }
@@ -114,11 +114,11 @@ ul li {
 section.jumbotron {
     position: relative;
     background: url(../img/jumbotron.png);
-    background-position: center;
-    background-size: cover;
+    background-color: #FEF4EE;
+    background-position: right;
+    background-size: auto 127%;
     background-repeat: no-repeat;
-    height: 700px;
-    width: 100%;
+    height: 550px;
 }
 .jumbotron-text {
     display: inline-block;
@@ -128,7 +128,7 @@ section.jumbotron {
 }
 .jumbotron-text > h1 {
     font-size: 300%;
-    margin-bottom: 5%;
+    margin: 3% 0;
 }
 .jumbotron-text > p,
 .contained-center > p,
@@ -145,9 +145,9 @@ section.jumbotron {
 }
 .green-line {
     position: absolute;
-    height: 70px;
-    width: 100%; 
-    bottom: 0; 
+    height: 80px;
+    width: 100%;
+    bottom: -70px;
     background-color: #7BDED2;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
@@ -156,9 +156,9 @@ section.jumbotron {
 /* main 1/3 container */
 main > section:first-child {
     background-color: #F4F9FD;
-    /* height: 1500px; */
-    padding: 1% 0 1%;
-    color:#33475B;
+    margin-top: 70px;
+    padding: 1% 0 0;
+    color: #33475B;
 }
 .contained-center {
     margin: 3% auto;
@@ -169,7 +169,8 @@ main > section:first-child {
 div.contained-center > img {
     width: 30%;
 }
-h2 {
+.main-uno h2,
+.lg-tab-head h2 {
     font-size: 30px;
     margin: 2% 0;
 }
@@ -201,14 +202,14 @@ h2 {
 }
 h3 {
     font-size: 140%;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 h4 {
     margin: 2% 0;
 }
 .main-box > p {
-    margin: 3% 0;
-    padding-right: 5%;
+    margin: 0% auto;
+    padding: 10px 0;
     font-size: 85%;
     line-height: 170%;
     font-weight: 600;
@@ -243,8 +244,9 @@ h4 {
 .single-column > p {
     margin: 3% auto;
     width: 80%;
-    font-size: 95%;
+    font-size: 85%;
     line-height: 170%;
+    font-weight: 600;
 }
 .divisorio {
     border-top: 1px solid grey;
@@ -255,8 +257,9 @@ h4 {
     padding: 15px 0;
     font-size: 80%;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     width: 90%;
+    line-height: 130%;
 }
 .single-column li > i {
     color: #FE775A;
@@ -267,16 +270,75 @@ h4 {
     background-image: linear-gradient(to right, #00A5BB, #00BBA7);
     height: 700px;
     width: 100%;
-}
-section.tab {
-    text-align: center;
-    padding: 60px 0;
     color: white;
 }
-.tab > p {
+section.lg-tab-head {
+    text-align: center;
+    padding: 35px 0;
+}
+.lg-tab-head > p {
     line-height: 170%;
     font-size: 95%;
 }
+.cell {
+    text-align: center;
+    padding: 40px;
+    width: 25%;
+}
+.row1 .cell {    
+    border-bottom: 1px solid;
+}
+.cell:not(.cell:last-child) {
+    border-right: 1px solid;
+}
+.cell>h2 {
+    font-size: 250%;
+    margin: 10px 0;
+}
+.cell>h2::after {
+    content: "+";
+    font-size: 60%;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+.cell>p {
+    font-size: 70%;
+}
+
+/* part 3/3 main - sponsor + girl's image  */
+#white-bg {
+   background-color: white;
+}
+header.secondary-head{
+    margin: 20px auto;
+
+}
+.secondary-head>div:first-child {
+    margin: 30px;
+    width: 20%;
+    text-align: left;
+    color: #33475B;
+}
+.secondary-head h2 {
+    font-size: 300%;
+    margin: 15px 0;
+}
+.secondary-head p {
+    line-height: 1.5;
+    padding: 0 15px 0 0;
+    font-size: 95%;
+}
+.secondary-head>div>p>span {
+    font-weight: bold;
+}
+
+.secondary-head>div:last-child {
+    width: 80%;
+    text-align: center;
+}
+
+
+
 
 
 
