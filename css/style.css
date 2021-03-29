@@ -268,7 +268,7 @@ h4 {
 /* parte main 2/3 GRADIENT  */
 #gradient {
     background-image: linear-gradient(to right, #00A5BB, #00BBA7);
-    height: 700px;
+    height: 640px;
     width: 100%;
     color: white;
 }
@@ -282,7 +282,7 @@ section.lg-tab-head {
 }
 .cell {
     text-align: center;
-    padding: 40px;
+    padding: 25px;
     width: 25%;
 }
 .row1 .cell {    
@@ -310,12 +310,12 @@ section.lg-tab-head {
    background-color: white;
 }
 header.secondary-head{
-    margin: 20px auto;
+    margin: 40px auto;
 
 }
 .secondary-head>div:first-child {
-    margin: 30px;
     width: 20%;
+    margin-left: 5%;
     text-align: left;
     color: #33475B;
 }
@@ -333,8 +333,13 @@ header.secondary-head{
 }
 
 .secondary-head>div:last-child {
-    width: 80%;
-    text-align: center;
+    width: 70%;
+    padding: 3%;
+    text-align: right;
+}
+.secondary-head>div.float-left>img {
+    width: 20%;
+    padding: 1%;
 }
 
 
