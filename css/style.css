@@ -5,8 +5,6 @@
     padding: 0;
 }
 body {
-    width: 100%;
-    /* font-family: 'Nunito', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 .contained70{
@@ -40,7 +38,7 @@ h1 {
 }
 h2 {
     font-size: 30px;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 a {
     text-decoration: none;
@@ -50,6 +48,10 @@ ul li {
     list-style-type: none;
     font-weight: 600;
 }
+header,
+main {
+    color: #33475B;
+}
 
 /* HEADER  */
 .head-top,
@@ -57,6 +59,9 @@ ul li {
     height: 70px;
     line-height: 70px;
     vertical-align: middle;
+}
+.head-bot {
+    margin-top: 70px;
 }
 #main-head>section:first-child { /* prima riga header */
     background: #F4F9FD;
@@ -68,7 +73,7 @@ ul li {
     font-weight: 600;
     font-size: 90%;
 }
-#main-head>section:nth-child(2) { /* seconda riga header */
+.main-box { /* seconda riga header */
     background: white;
     margin-top: 71px;
 }
@@ -140,7 +145,6 @@ section.jumbotron {
 .jumbotron-text {
     display: inline-block;
     width: 50%;
-    color: #33475B;
     margin: 5% 0;
 }
 .contained70 p {
@@ -177,7 +181,6 @@ main > section:first-child {
     margin: 3% auto;
     width: 70%;
     text-align: center;
-    color: #33475B;
 }
 .box-column3 img,
 #main-box img {
@@ -279,10 +282,6 @@ section.lg-tab-head {
     text-align: center;
     padding: 35px 0;
 }
-.lg-tab-head > p {
-    line-height: 170%;
-    font-size: 95%;
-}
 .cell {
     text-align: center;
     padding: 25px;
@@ -320,7 +319,6 @@ header.secondary-head{
     width: 20%;
     margin-left: 5%;
     text-align: left;
-    color: #33475B;
 }
 .secondary-head h2 {
     font-size: 50px;
@@ -346,7 +344,6 @@ section.secondary-main div {
     width: 50%;
 }
 div.text-left {
-    color: #33475B;
     padding-right: 70px;
 }
 div.text-left p {
@@ -371,22 +368,23 @@ footer {
     width: 25%;
 }
 footer a {
-    /* text-decoration: none; */
     color: #C6D1DD;
 }
-.foot-col li:first-child>a {
+h5 {
+    font-size: 130%;
+    margin: 30px 0;
     color: white;
 }
-.foot-col li:first-child {
-    margin: 30px 0;
-}
-.foot-col li {
+.foot-col li:not(li>ul>li) {
     text-transform: capitalize;
     margin: 20px 0;
 }
-footer a>i {
-    margin: 5px 10px 0 0;
+li>ul>li {
+    display: inline-block;
+    margin: 0 5px;
 }
+
+
 /* footer 2/3  */
 .languages ul {
     margin: 0 auto;
@@ -405,7 +403,7 @@ footer a>i {
 }
 
 /* footer 3/3  */
-footer section:last-child {
+.chiusura-footer {
     position: relative;
 }
 .last-left {
